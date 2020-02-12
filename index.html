@@ -131,7 +131,7 @@
 				}
 			}
 		};
-		xhttp.open("POST",window.location.href+"start.php?"+link, true);
+		xhttp.open("POST","./start.php?"+link, true);
 		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xhttp.send("url="+link);
 		xhttp.onerror = () => {
